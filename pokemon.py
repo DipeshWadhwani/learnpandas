@@ -6,3 +6,6 @@ df = pd.read_csv("pokemon.csv")
 # to show everything in the terminal .to_string() is used
 
 print(df.to_string()) # this will show every row every column not the truncated version
+
+df_j = pd.read_json("pokemon.json")
+print(df_j.to_string())
