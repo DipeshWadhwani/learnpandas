@@ -32,4 +32,14 @@ except KeyError:
     print("Pokemon not found in the database.")
 
 
+# FILTERING using pandas
 
+# Which pokemon is taller then 2m 
+
+tall_pokemon = df[df["Height"] > 2.0]
+print(tall_pokemon)
+
+# Which pokemon is more then 100
+
+heavy_pokemon = df[df["Weight"] > 100]
+print(heavy_pokemon)
