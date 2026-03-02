@@ -43,3 +43,8 @@ print(tall_pokemon)
 
 heavy_pokemon = df[df["Weight"] > 100]
 print(heavy_pokemon)
+
+# If pokemon is legendary or not
+
+legend = df[df["Legendary"] == 1]
+print(legend)
