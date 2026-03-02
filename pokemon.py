@@ -48,3 +48,20 @@ print(heavy_pokemon)
 
 legend = df[df["Legendary"] == 1]
 print(legend)
+
+# If pokemon is water pokemon 
+# This will work for only Type1
+water_pokemon = df[df["Type1"] == "Water"]
+print(water_pokemon)
+
+# for getting for the both types use of OR operator
+
+water_pokemon = df[(df["Type1"] == "Water") | (df["Type2"] == "Water")]
+print(water_pokemon)
+
+# get the pokemon if it is fire and flying both 
+# it will be achieved by and
+
+ff_pokemon = df[(df["Type1"] == "Fire") & (df["Type2"] == "Flying")]
+print(ff_pokemon)
+
