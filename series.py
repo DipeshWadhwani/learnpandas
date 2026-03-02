@@ -20,8 +20,8 @@ cal_series = pd.Series(cal)  # this will show all the days and calaries
 
 # There is loc and iloc, loc is location and iloc is index location in loc is we write ["Day1"] it will show value for Day1 and if we do ["Day2"] it will show values of Day2, iloc is the same but instead of ["Day1"] etc we write index numbers which starts from 0.
 
-cal_series.loc["Day1"] # this will show the calaries of day 1
-cal_series.iloc[1] # this will also show the calaries of day 2
+print(cal_series.loc["Day1"]) # this will show the calaries of day 1
+print(cal_series.iloc[1]) # this will also show the calaries of day 2
 
 # if you want to add, subtract, multiply, or divide the values in the series you can do that too like this 
 
