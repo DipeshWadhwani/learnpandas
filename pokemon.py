@@ -87,3 +87,14 @@ print(df["Height"].max())
 print(df["Height"].min())
 
 print(df["Height"].sum())
+
+print(df["Height"].count())
+
+print(df["Type2"].count())
+
+# GROUPBY
+
+group = df.groupby("Type1")
+print(group["Height"].mean())
+
+print(group["Height"].sum())
