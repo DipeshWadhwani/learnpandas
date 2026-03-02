@@ -76,3 +76,14 @@ print(df.min(numeric_only=True)) # min of all the numeric values in each column
 print(df.max(numeric_only=True)) # max of all the numeric values in each column
 
 print(df.count())
+
+
+# AGGREGATION ON SINGLE COLUMN
+
+print(df["Height"].mean())
+
+print(df["Height"].max())
+
+print(df["Height"].min())
+
+print(df["Height"].sum())
