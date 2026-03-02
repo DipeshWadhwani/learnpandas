@@ -65,3 +65,14 @@ print(water_pokemon)
 ff_pokemon = df[(df["Type1"] == "Fire") & (df["Type2"] == "Flying")]
 print(ff_pokemon)
 
+# AGGREGATE FUNCTION = REDUCES A SET OF VALUES INTO A SINGLE SUMMARY VALUE USED TO SUMMARIZE AND ANALYZE DATA OFTEN USED WITH THE groupby() FUNCTION 
+
+print(df.mean(numeric_only=True)) # we are telling pandas that if there are any numeric values give me mean of it 
+
+print(df.sum(numeric_only=True)) # sum of all the numeric values if it is present 
+
+print(df.min(numeric_only=True)) # min of all the numeric values in each column 
+
+print(df.max(numeric_only=True)) # max of all the numeric values in each column
+
+print(df.count())
