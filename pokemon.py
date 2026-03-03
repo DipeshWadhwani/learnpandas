@@ -98,3 +98,10 @@ group = df.groupby("Type1")
 print(group["Height"].mean())
 
 print(group["Height"].sum())
+
+# DATA CLEANING :- IT IS THE PROCESS OF FIXING / REMOVING INCOMPLETE, IRRELEVENT INCORRECT DATA. ~75% OF WORK DONE WITH PANDAS IS DATACLEANING
+
+# 1. DROP irrelevent columns 
+
+df = df.drop(columns=["Legendary"])
+print(df)
