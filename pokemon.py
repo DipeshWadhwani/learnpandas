@@ -105,3 +105,8 @@ print(group["Height"].sum())
 
 df = df.drop(columns=["Legendary"])
 print(df)
+
+# 2. HANDLE missing data
+
+df = df.dropna(subset=["Type2"])
+print(df)
