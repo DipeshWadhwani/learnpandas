@@ -125,3 +125,8 @@ df["Type1"] = df["Type1"].replace({"Fire" : "FIRE",
                                    "Water" : "WATER"})
 
 print(df)
+
+# Standardize text
+
+df["Name"] = df["Name"].str.lower()
+print(df)
