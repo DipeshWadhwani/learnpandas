@@ -128,5 +128,7 @@ print(df)
 
 # Standardize text
 
-df["Name"] = df["Name"].str.lower()
-print(df)
+# df["Name"] = df["Name"].str.lower()
+# print(df)
+
+
