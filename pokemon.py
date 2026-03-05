@@ -103,17 +103,21 @@ print(group["Height"].sum())
 
 # 1. DROP irrelevent columns 
 
-df = df.drop(columns=["Legendary"])
-print(df)
+drop_column = df.drop(columns=["Legendary"])
+print(drop_column)
 
 # 2. HANDLE missing data
 
 #this is for column
-dff = df.dropna(subset=["Type2"]) # this will drop all the pokemons whohave N/A value in Type2
-print(dff)
+drop_na = df.dropna(subset=["Type2"]) # this will drop all the pokemons whohave N/A value in Type2
+print(drop_na)
 
 # Replace na value with another value 
 
-dfff = df.fillna({"Type2":"None"})  # this will replace na values with none written on it.
-print(dfff)
+change_to_none = df.fillna({"Type2":"None"})  # this will replace na values with none written on it.
+print(change_to_none)
 
+# Fix inconsistent values 
+
+df["Type1"] = df["Type1"].replace({"Grass" : "GRASS"})
+print(df)
