@@ -120,4 +120,8 @@ print(change_to_none)
 # Fix inconsistent values 
 
 df["Type1"] = df["Type1"].replace({"Grass" : "GRASS"})
+
+df["Type1"] = df["Type1"].replace({"Fire" : "FIRE", 
+                                   "Water" : "WATER"})
+
 print(df)
