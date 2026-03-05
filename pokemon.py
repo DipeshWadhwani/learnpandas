@@ -108,5 +108,12 @@ print(df)
 
 # 2. HANDLE missing data
 
-df = df.dropna(subset=["Type2"])
-print(df)
+#this is for column
+dff = df.dropna(subset=["Type2"]) # this will drop all the pokemons whohave N/A value in Type2
+print(dff)
+
+# Replace na value with another value 
+
+dfff = df.fillna({"Type2":"None"})  # this will replace na values with none written on it.
+print(dfff)
+
